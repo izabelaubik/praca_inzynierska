@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1>Social Media Sentiment Analysis</h1>
+    <form method="post" action="/">
+        <label for="url_input">Enter the YouTube Video URL:</label>
+        <p>{{ error_message }} </p>
+        <input type="text" name="url_input" id="url_input">
+        <button type="submit">Run</button>
+    </form>
+</div>
+{% endblock %}
